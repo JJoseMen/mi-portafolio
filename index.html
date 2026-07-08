@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan José Mendoza | Desarrollador Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">JM<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="saludo">¡Hola! 👋 Soy</p>
+                <h1>Juan José Mendoza Condori</h1>
+                <h2>Desarrollador Web <span class="typing">Full Stack</span></h2>
+                <p class="descripcion">
+                    Estudiante de Ingeniería de Sistemas apasionado por crear 
+                    experiencias digitales. Especializado en React, Laravel y Node.js.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="cv-juan-mendoza.pdf" class="btn btn-secondary" download>
+                        <i class="fas fa-download"></i> Descargar CV
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/tu-usuario" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/tu-perfil" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:juanjosemendoza342@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/tu-foto.png" alt="Juan José Mendoza">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section id="sobre-mi" class="sobre-mi">
+        <div class="container">
+            <h2 class="section-title">Sobre <span>Mí</span></h2>
+            <div class="sobre-mi-grid">
+                <div class="sobre-mi-texto">
+                    <p>
+                        Soy estudiante de <strong>Ingeniería de Sistemas</strong> en la 
+                        Universidad Pública de El Alto (UPEA). Me considero una persona 
+                        <strong>proactiva, autodidacta y apasionada</strong> por la tecnología.
+                    </p>
+                    <p>
+                        Actualmente me enfoco en el desarrollo web full stack, combinando 
+                        <strong>React</strong> en el frontend con <strong>Laravel y Node.js</strong> 
+                        en el backend.
+                    </p>
+                    <div class="datos-personales">
+                        <div><strong>📍 Ubicación:</strong> El Alto, Bolivia</div>
+                        <div><strong>🎓 Formación:</strong> Ingeniería de Sistemas (2022-Presente)</div>
+                        <div><strong>💼 Disponibilidad:</strong> Freelance / Prácticas</div>
+                        <div><strong>🌐 Idiomas:</strong> Español (nativo), Inglés (técnico)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="habilidades">
+        <div class="container">
+            <h2 class="section-title">Mis <span>Habilidades</span></h2>
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        <span>TypeScript</span><span>React</span><span>Next.js</span>
+                        <span>Tailwind CSS</span>
+                    </div>
+                </div>
+                <!-- Backend -->
+                <div class="skill-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span>PHP</span><span>Laravel</span><span>Node.js</span>
+                        <span>Express.js</span><span>REST APIs</span>
+                    </div>
+                </div>
+                <!-- Bases de Datos -->
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Bases de Datos</h3>
+                    <div class="skill-tags">
+                        <span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span>
+                        <span>Prisma</span>
+                    </div>
+                </div>
+                <!-- Herramientas -->
+                <div class="skill-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Herramientas</h3>
+                    <div class="skill-tags">
+                        <span>Git</span><span>GitHub</span><span>Docker</span>
+                        <span>VS Code</span><span>Insomnia</span><span>Figma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos">
+        <div class="container">
+            <h2 class="section-title">Mis <span>Proyectos</span></h2>
+            <div class="proyectos-grid">
+                
+                <!-- Proyecto 1 -->
+                <div class="proyecto-card">
+                    <div class="proyecto-img">
+                        <img src="images/proyecto1.jpg" alt="E-commerce">
+                        <div class="proyecto-overlay">
+                            <a href="https://demo-proyecto1.vercel.app" target="_blank" class="btn-demo">
+                                <i class="fas fa-eye"></i> Ver Demo
+                            </a>
+                            <a href="https://github.com/tu-usuario/proyecto1" target="_blank" class="btn-code">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>E-commerce Full Stack</h3>
+                        <p>Tienda online con carrito, pagos con Stripe y panel de admin.</p>
+                        <div class="proyecto-tech">
+                            <span>Next.js</span><span>Node.js</span><span>MongoDB</span><span>Stripe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="proyecto-card">
+                    <div class="proyecto-img">
+                        <img src="images/proyecto2.jpg" alt="Dashboard">
+                        <div class="proyecto-overlay">
+                            <a href="#" target="_blank" class="btn-demo">
+                                <i class="fas fa-eye"></i> Ver Demo
+                            </a>
+                            <a href="#" target="_blank" class="btn-code">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Dashboard Analytics</h3>
+                        <p>Panel de administración con gráficos, filtros y exportación.</p>
+                        <div class="proyecto-tech">
+                            <span>React</span><span>Node.js</span><span>PostgreSQL</span><span>Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="proyecto-card">
+                    <div class="proyecto-img">
+                        <img src="images/proyecto3.jpg" alt="Chat App">
+                        <div class="proyecto-overlay">
+                            <a href="#" target="_blank" class="btn-demo">
+                                <i class="fas fa-eye"></i> Ver Demo
+                            </a>
+                            <a href="#" target="_blank" class="btn-code">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Chat en Tiempo Real</h3>
+                        <p>Aplicación de mensajería con salas y notificaciones push.</p>
+                        <div class="proyecto-tech">
+                            <span>React</span><span>Socket.io</span><span>Node.js</span><span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2 class="section-title">Contácta<span>me</span></h2>
+            <div class="contacto-grid">
+                <div class="contacto-info">
+                    <div class="contacto-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>juanjosemendoza342@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+591 74073252</p>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p>El Alto, La Paz, Bolivia</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contacto-form" action="https://formspree.io/f/tu-codigo" method="POST">
+                    <input type="text" name="nombre" placeholder="Tu nombre" required>
+                    <input type="email" name="email" placeholder="Tu email" required>
+                    <input type="text" name="asunto" placeholder="Asunto" required>
+                    <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Juan José Mendoza. Todos los derechos reservados.</p>
+            <p>Hecho con <i class="fas fa-heart"></i> y mucho <i class="fas fa-coffee"></i></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
