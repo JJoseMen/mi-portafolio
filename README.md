@@ -35,7 +35,7 @@ Apasionado por crear soluciones digitales que resuelvan problemas reales. Autodi
 
 - 📧 **Email:** [juanjosemendoza342@gmail.com](mailto:juanjosemendoza342@gmail.com)
 - 📱 **Teléfono:** +591 74073252
-- 🌐 **Portafolio:** [mi-portafolio-jjosemen.vercel.app](https://mi-portafolio-jjosemen.vercel.app)
+- 🌐 **Portafolio:** [mi-portafolio-jjosemen.vercel.app](mi-portafolio-9j3zn1c40-jjose.vercel.app)
 - 💼 **LinkedIn:** [linkedin.com/in/tu-perfil](https://linkedin.com/in/tu-perfil)
 
 ---
