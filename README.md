@@ -25,9 +25,9 @@ Apasionado por crear soluciones digitales que resuelvan problemas reales. Autodi
 
 | Proyecto | Tecnologías | Demo | Código |
 |----------|-------------|------|--------|
-| 🛒 E-commerce Full Stack | Next.js, Node.js, MongoDB, Stripe | [Ver Demo](https://ecommerce-demo.vercel.app) | [Código](https://github.com/JJoseMen/ecommerce-app) |
-| 📊 Dashboard Analytics | React, Node.js, PostgreSQL, Chart.js | [Ver Demo](https://dashboard-demo.vercel.app) | [Código](https://github.com/JJoseMen/dashboard-app) |
-| 💬 Chat en Tiempo Real | React, Socket.io, Node.js, MongoDB | [Ver Demo](https://chat-demo.vercel.app) | [Código](https://github.com/JJoseMen/chat-app) |
+| 🛒 E-commerce Full Stack | Next.js, Node.js, MongoDB, Stripe | [Ver Demo](https://ecommerce-frontend-sqxyh8qi2-jjose.vercel.app/) | [Código](https://github.com/JJoseMen/ecommerce-frontend) |
+| 📊 Dashboard Analytics | React, Node.js, PostgreSQL, Chart.js | [Ver Demo](https://dashboard-analytics-nine-black.vercel.app/) | [Código](https://github.com/JJoseMen/dashboard-analytics) |
+| 💬 Chat en Tiempo Real | React, Socket.io, Node.js, MongoDB | [Ver Demo](https://chat-qevgsggbv-jjose.vercel.app/) | [Código](https://github.com/JJoseMen/chat-app) |
 
 ---
 
