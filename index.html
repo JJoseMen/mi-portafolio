@@ -3,261 +3,571 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juan José Mendoza | Desarrollador Web</title>
+    <title>Juan José Mendoza | Desarrollador Web Full Stack</title>
+    <meta name="description" content="Portafolio de Juan José Mendoza Condori - Desarrollador Web Full Stack especializado en React, Laravel y Node.js">
     <link rel="stylesheet" href="css/styles.css">
-    <!-- Font Awesome para iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navegación -->
-    <nav class="navbar">
+    <!-- ========== NAVEGACIÓN ========== -->
+    <nav class="navbar" id="navbar">
         <div class="container">
-            <a href="#" class="logo">JJoseMen<span>.</span></a>
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
+            <a href="#" class="logo">JM<span>.</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio" class="active">Inicio</a></li>
                 <li><a href="#sobre-mi">Sobre Mí</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li><a href="https://github.com/JJoseMen" target="_blank" class="nav-github"><i class="fab fa-github"></i></a></li>
             </ul>
-            <div class="hamburger">
-                <span></span><span></span><span></span>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- ========== HERO ========== -->
     <section id="inicio" class="hero">
         <div class="container">
             <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="pulse"></span>
+                    Disponible para trabajar
+                </div>
                 <p class="saludo">¡Hola! 👋 Soy</p>
                 <h1>Juan José Mendoza Condori</h1>
-                <h2>Desarrollador Web <span class="typing">Full Stack</span></h2>
+                <h2>Desarrollador Web <span class="typing" id="typing"></span><span class="cursor">|</span></h2>
                 <p class="descripcion">
-                    Estudiante de Ingeniería de Sistemas apasionado por crear 
-                    experiencias digitales. Especializado en React, Laravel y Node.js.
+                    Estudiante de <strong>Ingeniería de Sistemas</strong> apasionado por crear 
+                    experiencias digitales. Especializado en <strong>React, Laravel y Node.js</strong>.
+                    Construyo aplicaciones web modernas, rápidas y escalables.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
-                    <a href="cv-juan-mendoza.pdf" class="btn btn-secondary" download>
+                    <a href="#proyectos" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> Ver Proyectos
+                    </a>
+                    <a href="assets/cv-juan-mendoza.pdf" class="btn btn-secondary" download id="downloadCv">
                         <i class="fas fa-download"></i> Descargar CV
                     </a>
                 </div>
                 <div class="social-links">
-                    <a href="https://github.com/tu-usuario" target="_blank">
+                    <a href="https://github.com/JJoseMen" target="_blank" title="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://linkedin.com/in/tu-perfil" target="_blank">
-                        <i class="fab fa-linkedin"></i>
+                    <a href="https://linkedin.com/in/tu-perfil" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="mailto:juanjosemendoza342@gmail.com">
+                    <a href="mailto:juanjosemendoza342@gmail.com" title="Email">
                         <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/59174073252" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="images/juan.jpeg" alt="Juan José Mendoza">
+                <div class="hero-image-wrapper">
+                    <img src="images/juan.jpeg" alt="Juan José Mendoza" id="profileImg">
+                    <div class="hero-image-bg"></div>
+                    <div class="floating-icons">
+                        <i class="fab fa-react" style="--delay: 0s"></i>
+                        <i class="fab fa-laravel" style="--delay: 0.5s"></i>
+                        <i class="fab fa-node-js" style="--delay: 1s"></i>
+                        <i class="fab fa-js" style="--delay: 1.5s"></i>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#sobre-mi"><i class="fas fa-chevron-down"></i></a>
         </div>
     </section>
 
-    <!-- Sobre Mí -->
+    <!-- ========== SOBRE MÍ ========== -->
     <section id="sobre-mi" class="sobre-mi">
         <div class="container">
-            <h2 class="section-title">Sobre <span>Mí</span></h2>
+            <div class="section-header">
+                <span class="section-tag">Sobre Mí</span>
+                <h2 class="section-title">Conoce mi <span>historia</span></h2>
+            </div>
             <div class="sobre-mi-grid">
-                <div class="sobre-mi-texto">
+                <div class="sobre-mi-image">
+                    <img src="images/about.png" alt="Sobre mí">
+                    <div class="experience-badge">
+                        <span class="number">3+</span>
+                        <span class="text">Años de<br>aprendizaje</span>
+                    </div>
+                </div>
+                <div class="sobre-mi-content">
+                    <h3>Desarrollador Web apasionado por la tecnología</h3>
                     <p>
                         Soy estudiante de <strong>Ingeniería de Sistemas</strong> en la 
-                        Universidad Pública de El Alto (UPEA). Me considero una persona 
-                        <strong>proactiva, autodidacta y apasionada</strong> por la tecnología.
+                        <strong>Universidad Pública de El Alto (UPEA)</strong>, actualmente en mi tercer año. 
+                        Me considero una persona <strong>proactiva, autodidacta y apasionada</strong> por la tecnología.
                     </p>
                     <p>
-                        Actualmente me enfoco en el desarrollo web full stack, combinando 
-                        <strong>React</strong> en el frontend con <strong>Laravel y Node.js</strong> 
-                        en el backend.
+                        Mi enfoque está en el desarrollo web <strong>full stack</strong>, combinando 
+                        <strong>React y Next.js</strong> en el frontend con <strong>Laravel y Node.js</strong> 
+                        en el backend. Me encantan los retos que me permiten medir y mejorar mis habilidades.
                     </p>
                     <div class="datos-personales">
-                        <div><strong>📍 Ubicación:</strong> El Alto, Bolivia</div>
-                        <div><strong>🎓 Formación:</strong> Ingeniería de Sistemas (2022-Presente)</div>
-                        <div><strong>💼 Disponibilidad:</strong> Freelance / Prácticas</div>
-                        <div><strong>🌐 Idiomas:</strong> Español (nativo), Inglés (técnico)</div>
+                        <div class="dato">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="label">Ubicación</span>
+                                <span class="value">El Alto, La Paz, Bolivia</span>
+                            </div>
+                        </div>
+                        <div class="dato">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <span class="label">Formación</span>
+                                <span class="value">Ingeniería de Sistemas - UPEA</span>
+                            </div>
+                        </div>
+                        <div class="dato">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <span class="label">Disponibilidad</span>
+                                <span class="value">Freelance / Prácticas / Junior</span>
+                            </div>
+                        </div>
+                        <div class="dato">
+                            <i class="fas fa-language"></i>
+                            <div>
+                                <span class="label">Idiomas</span>
+                                <span class="value">Español (nativo), Inglés (técnico)</span>
+                            </div>
+                        </div>
                     </div>
+                    <a href="assets/cv-juan-mendoza.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Descargar CV
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Habilidades -->
+    <!-- ========== ESTADÍSTICAS ========== -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fas fa-code"></i>
+                    <span class="number" data-target="10">0</span>
+                    <span class="label">Proyectos Completados</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-coffee"></i>
+                    <span class="number" data-target="500">0</span>
+                    <span class="label">Tazas de Café</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-clock"></i>
+                    <span class="number" data-target="2000">0</span>
+                    <span class="label">Horas de Código</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-heart"></i>
+                    <span class="number" data-target="100">0</span>
+                    <span class="label">% de Pasión</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== HABILIDADES ========== -->
     <section id="habilidades" class="habilidades">
         <div class="container">
-            <h2 class="section-title">Mis <span>Habilidades</span></h2>
-            <div class="skills-grid">
-                <!-- Frontend -->
-                <div class="skill-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Frontend</h3>
-                    <div class="skill-tags">
-                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
-                        <span>TypeScript</span><span>React</span><span>Next.js</span>
-                        <span>Tailwind CSS</span>
+            <div class="section-header">
+                <span class="section-tag">Habilidades</span>
+                <h2 class="section-title">Mi <span>Stack Técnico</span></h2>
+            </div>
+            <div class="skills-tabs">
+                <button class="tab-btn active" data-tab="frontend">Frontend</button>
+                <button class="tab-btn" data-tab="backend">Backend</button>
+                <button class="tab-btn" data-tab="database">Bases de Datos</button>
+                <button class="tab-btn" data-tab="tools">Herramientas</button>
+            </div>
+            <div class="skills-content">
+                <div class="skills-grid active" id="frontend">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                        <div class="skill-info">
+                            <h4>HTML5</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                        <div class="skill-info">
+                            <h4>CSS3</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-js"></i></div>
+                        <div class="skill-info">
+                            <h4>JavaScript</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-react"></i></div>
+                        <div class="skill-info">
+                            <h4>React</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-react"></i></div>
+                        <div class="skill-info">
+                            <h4>Next.js</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="70%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-wind"></i></div>
+                        <div class="skill-info">
+                            <h4>Tailwind CSS</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+                        </div>
                     </div>
                 </div>
-                <!-- Backend -->
-                <div class="skill-card">
-                    <i class="fas fa-server"></i>
-                    <h3>Backend</h3>
-                    <div class="skill-tags">
-                        <span>PHP</span><span>Laravel</span><span>Node.js</span>
-                        <span>Express.js</span><span>REST APIs</span>
+                <div class="skills-grid" id="backend">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-php"></i></div>
+                        <div class="skill-info">
+                            <h4>PHP</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-laravel"></i></div>
+                        <div class="skill-info">
+                            <h4>Laravel</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                        <div class="skill-info">
+                            <h4>Node.js</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="70%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-server"></i></div>
+                        <div class="skill-info">
+                            <h4>Express.js</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="65%"></div></div>
+                        </div>
                     </div>
                 </div>
-                <!-- Bases de Datos -->
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>Bases de Datos</h3>
-                    <div class="skill-tags">
-                        <span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span>
-                        <span>Prisma</span>
+                <div class="skills-grid" id="database">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <div class="skill-info">
+                            <h4>MySQL</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <div class="skill-info">
+                            <h4>PostgreSQL</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="70%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-leaf"></i></div>
+                        <div class="skill-info">
+                            <h4>MongoDB</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="65%"></div></div>
+                        </div>
                     </div>
                 </div>
-                <!-- Herramientas -->
-                <div class="skill-card">
-                    <i class="fas fa-tools"></i>
-                    <h3>Herramientas</h3>
-                    <div class="skill-tags">
-                        <span>Git</span><span>GitHub</span><span>Docker</span>
-                        <span>VS Code</span><span>Insomnia</span><span>Figma</span>
+                <div class="skills-grid" id="tools">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                        <div class="skill-info">
+                            <h4>Git</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-github"></i></div>
+                        <div class="skill-info">
+                            <h4>GitHub</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                        <div class="skill-info">
+                            <h4>Docker</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="50%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <div class="skill-info">
+                            <h4>VS Code</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Proyectos -->
+    <!-- ========== PROYECTOS ========== -->
     <section id="proyectos" class="proyectos">
         <div class="container">
-            <h2 class="section-title">Mis <span>Proyectos</span></h2>
+            <div class="section-header">
+                <span class="section-tag">Portafolio</span>
+                <h2 class="section-title">Mis <span>Proyectos</span></h2>
+                <p class="section-desc">Aquí puedes ver algunos de los proyectos que he desarrollado</p>
+            </div>
+            
+            <div class="proyectos-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+
             <div class="proyectos-grid">
-                
-                <!-- Proyecto 1 -->
-                <div class="proyecto-card">
+                <!-- Proyecto 1: E-commerce -->
+                <div class="proyecto-card" data-category="fullstack">
                     <div class="proyecto-img">
-                        <img src="images/proyecto1.jpg" alt="E-commerce">
+                        <img src="images/proyecto-ecommerce.jpg" alt="E-commerce">
                         <div class="proyecto-overlay">
-                            <a href="https://demo-proyecto1.vercel.app" target="_blank" class="btn-demo">
-                                <i class="fas fa-eye"></i> Ver Demo
+                            <a href="https://ecommerce-demo-jjosemen.vercel.app" target="_blank" class="btn-demo">
+                                <i class="fas fa-external-link-alt"></i> Ver Demo
                             </a>
-                            <a href="https://github.com/tu-usuario/proyecto1" target="_blank" class="btn-code">
+                            <a href="https://github.com/JJoseMen/ecommerce-app" target="_blank" class="btn-code">
                                 <i class="fab fa-github"></i> Código
                             </a>
                         </div>
                     </div>
                     <div class="proyecto-info">
+                        <div class="proyecto-tags">
+                            <span>Next.js</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
                         <h3>E-commerce Full Stack</h3>
-                        <p>Tienda online con carrito, pagos con Stripe y panel de admin.</p>
-                        <div class="proyecto-tech">
-                            <span>Next.js</span><span>Node.js</span><span>MongoDB</span><span>Stripe</span>
+                        <p>Tienda online completa con carrito de compras, pasarela de pagos con Stripe, panel de administración y autenticación JWT.</p>
+                        <div class="proyecto-stats">
+                            <span><i class="fas fa-star"></i> 12</span>
+                            <span><i class="fas fa-code-branch"></i> 3</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Proyecto 2 -->
-                <div class="proyecto-card">
+                <!-- Proyecto 2: Dashboard -->
+                <div class="proyecto-card" data-category="fullstack">
                     <div class="proyecto-img">
-                        <img src="images/proyecto2.jpg" alt="Dashboard">
+                        <img src="images/proyecto-dashboard.jpg" alt="Dashboard">
                         <div class="proyecto-overlay">
-                            <a href="#" target="_blank" class="btn-demo">
-                                <i class="fas fa-eye"></i> Ver Demo
+                            <a href="https://dashboard-demo-jjosemen.vercel.app" target="_blank" class="btn-demo">
+                                <i class="fas fa-external-link-alt"></i> Ver Demo
                             </a>
-                            <a href="#" target="_blank" class="btn-code">
+                            <a href="https://github.com/JJoseMen/dashboard-app" target="_blank" class="btn-code">
                                 <i class="fab fa-github"></i> Código
                             </a>
                         </div>
                     </div>
                     <div class="proyecto-info">
+                        <div class="proyecto-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
+                        </div>
                         <h3>Dashboard Analytics</h3>
-                        <p>Panel de administración con gráficos, filtros y exportación.</p>
-                        <div class="proyecto-tech">
-                            <span>React</span><span>Node.js</span><span>PostgreSQL</span><span>Chart.js</span>
+                        <p>Panel de administración con gráficos interactivos, filtros avanzados, exportación a PDF/Excel y gestión de usuarios con roles.</p>
+                        <div class="proyecto-stats">
+                            <span><i class="fas fa-star"></i> 8</span>
+                            <span><i class="fas fa-code-branch"></i> 2</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Proyecto 3 -->
-                <div class="proyecto-card">
+                <!-- Proyecto 3: Chat -->
+                <div class="proyecto-card" data-category="fullstack">
                     <div class="proyecto-img">
-                        <img src="images/proyecto3.jpg" alt="Chat App">
+                        <img src="images/proyecto-chat.jpg" alt="Chat App">
                         <div class="proyecto-overlay">
-                            <a href="#" target="_blank" class="btn-demo">
-                                <i class="fas fa-eye"></i> Ver Demo
+                            <a href="https://chat-demo-jjosemen.vercel.app" target="_blank" class="btn-demo">
+                                <i class="fas fa-external-link-alt"></i> Ver Demo
                             </a>
-                            <a href="#" target="_blank" class="btn-code">
+                            <a href="https://github.com/JJoseMen/chat-app" target="_blank" class="btn-code">
                                 <i class="fab fa-github"></i> Código
                             </a>
                         </div>
                     </div>
                     <div class="proyecto-info">
+                        <div class="proyecto-tags">
+                            <span>React</span>
+                            <span>Socket.io</span>
+                            <span>MongoDB</span>
+                        </div>
                         <h3>Chat en Tiempo Real</h3>
-                        <p>Aplicación de mensajería con salas y notificaciones push.</p>
-                        <div class="proyecto-tech">
-                            <span>React</span><span>Socket.io</span><span>Node.js</span><span>MongoDB</span>
+                        <p>Aplicación de mensajería instantánea con salas de chat, mensajes privados, notificaciones push y historial de conversaciones.</p>
+                        <div class="proyecto-stats">
+                            <span><i class="fas fa-star"></i> 15</span>
+                            <span><i class="fas fa-code-branch"></i> 4</span>
                         </div>
                     </div>
                 </div>
 
+                <!-- Proyecto 4: Portafolio (este mismo) -->
+                <div class="proyecto-card" data-category="frontend">
+                    <div class="proyecto-img">
+                        <img src="images/proyecto-portafolio.jpg" alt="Portafolio">
+                        <div class="proyecto-overlay">
+                            <a href="https://mi-portafolio-jjosemen.vercel.app" target="_blank" class="btn-demo">
+                                <i class="fas fa-external-link-alt"></i> Ver Demo
+                            </a>
+                            <a href="https://github.com/JJoseMen/mi-portafolio" target="_blank" class="btn-code">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <div class="proyecto-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <h3>Portafolio Personal</h3>
+                        <p>Sitio web personal responsive con animaciones, modo oscuro, formulario de contacto funcional y despliegue automático.</p>
+                        <div class="proyecto-stats">
+                            <span><i class="fas fa-star"></i> 5</span>
+                            <span><i class="fas fa-code-branch"></i> 1</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contacto -->
+    <!-- ========== CONTACTO ========== -->
     <section id="contacto" class="contacto">
         <div class="container">
-            <h2 class="section-title">Contácta<span>me</span></h2>
+            <div class="section-header">
+                <span class="section-tag">Contacto</span>
+                <h2 class="section-title">Trabajemos <span>Juntos</span></h2>
+                <p class="section-desc">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            </div>
             <div class="contacto-grid">
                 <div class="contacto-info">
                     <div class="contacto-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
+                        <div class="icon"><i class="fas fa-envelope"></i></div>
+                        <div class="info">
                             <h4>Email</h4>
-                            <p>juanjosemendoza342@gmail.com</p>
+                            <a href="mailto:juanjosemendoza342@gmail.com">juanjosemendoza342@gmail.com</a>
                         </div>
                     </div>
                     <div class="contacto-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
+                        <div class="icon"><i class="fas fa-phone"></i></div>
+                        <div class="info">
                             <h4>Teléfono</h4>
-                            <p>+591 74073252</p>
+                            <a href="tel:+59174073252">+591 74073252</a>
                         </div>
                     </div>
                     <div class="contacto-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
+                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="info">
                             <h4>Ubicación</h4>
                             <p>El Alto, La Paz, Bolivia</p>
                         </div>
                     </div>
+                    <div class="contacto-item">
+                        <div class="icon"><i class="fab fa-github"></i></div>
+                        <div class="info">
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/JJoseMen" target="_blank">github.com/JJoseMen</a>
+                        </div>
+                    </div>
                 </div>
-                <form class="contacto-form" action="https://formspree.io/f/tu-codigo" method="POST">
-                    <input type="text" name="nombre" placeholder="Tu nombre" required>
-                    <input type="email" name="email" placeholder="Tu email" required>
-                    <input type="text" name="asunto" placeholder="Asunto" required>
-                    <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
-                    <button type="submit" class="btn btn-primary">
+                
+                <form class="contacto-form" id="contactForm" action="https://formspree.io/f/https://formspree.io/f/xbdvnday" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Tu nombre" required>
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Tu email" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Asunto" required>
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Tu mensaje..." required></textarea>
+                        <i class="fas fa-comment"></i>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
                         <i class="fas fa-paper-plane"></i> Enviar Mensaje
                     </button>
+                    <div class="form-status" id="formStatus"></div>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
         <div class="container">
-            <p>© 2025 Juan José Mendoza. Todos los derechos reservados.</p>
-            <p>Hecho con <i class="fas fa-heart"></i> y mucho <i class="fas fa-coffee"></i></p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">JM<span>.</span></a>
+                    <p>Desarrollador Web Full Stack en formación. Construyendo el futuro, una línea de código a la vez.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/JJoseMen" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/tu-perfil" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:juanjosemendoza342@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://wa.me/59174073252" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="assets/cv-juan-mendoza.pdf" download>Descargar CV</a></li>
+                        <li><a href="https://github.com/JJoseMen" target="_blank">GitHub</a></li>
+                        <li><a href="https://linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Juan José Mendoza Condori. Todos los derechos reservados.</p>
+                <p>Hecho con <i class="fas fa-heart"></i> y mucho <i class="fas fa-coffee"></i> en El Alto, Bolivia</p>
+            </div>
         </div>
     </footer>
+
+    <!-- Botón volver arriba -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
     <script src="js/main.js"></script>
 </body>
