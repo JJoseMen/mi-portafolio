@@ -1,7 +1,7 @@
 # 🚀 Portafolio de Juan José Mendoza Condori
 
 [![GitHub](https://img.shields.io/badge/GitHub-JJoseMen-181717?style=flat&logo=github)](https://github.com/JJoseMen)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Juan%20José%20Mendoza-0A66C2?style=flat&logo=linkedin)](https://linkedin.com/in/tu-perfil)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Juan%20José%20Mendoza-0A66C2?style=flat&logo=linkedin)](https://linkedin.com/in/mendoza-condori-juan-jose-136979406)
 [![Email](https://img.shields.io/badge/Email-juanjosemendoza342@gmail.com-EA4335?style=flat&logo=gmail)](mailto:juanjosemendoza342@gmail.com)
 [![Portafolio](https://img.shields.io/badge/🌐%20Ver%20Portafolio-En%20Línea-6366f1?style=flat)](https://mi-portafolio-jjosemen.vercel.app)
 
@@ -36,7 +36,7 @@ Apasionado por crear soluciones digitales que resuelvan problemas reales. Autodi
 - 📧 **Email:** [juanjosemendoza342@gmail.com](mailto:juanjosemendoza342@gmail.com)
 - 📱 **Teléfono:** +591 74073252
 - 🌐 **Portafolio:** [mi-portafolio-jjosemen.vercel.app](https://mi-portafolio-jjosemen.vercel.app)
-- 💼 **LinkedIn:** [linkedin.com/in/tu-perfil](https://linkedin.com/in/tu-perfil)
+- 💼 **LinkedIn:** [linkedin.com/in/mendoza-condori-juan-jose-136979406](https://linkedin.com/in/mendoza-condori-juan-jose-136979406)
 
 ---
 
